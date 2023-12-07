@@ -1,6 +1,6 @@
 importScripts('https://cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js');
-importScripts('/assets/js/utils/db-utils.js')
-importScripts('/assets/js/utils/sw-utils.js')
+importScripts('./assets/js/utils/db-utils.js')
+importScripts('./assets/js/utils/sw-utils.js')
 const STATIC_CACHE = 'staticv1';
 const INMUTABLE_CACHE = 'inmutablev1';
 const DYNAMIC_CACHE = 'dynamicv1';
@@ -10,35 +10,35 @@ const DYNAMIC_CACHE = 'dynamicv1';
 const APP_SHELL = [
     '/',
     '/index.html',
-    '/assets/css/styles.css',
-    '/assets/img/img-404.png',
-    '/assets/img/report.ico',
-    '/assets/img/not-found.svg',
-    '/assets/img/reports.png',
-    '/assets/js/auth/signin.js',
-    '/assets/js/admin/admin.home.controller.js',
-    '/assets/js/admin/admin.users.controller.js',
-    '/assets/js/axios/axios-instance.js',
-    '/assets/js/toast/toasts.js',
-    '/assets/js/main.js',
+    './assets/css/styles.css',
+    './assets/img/img-404.png',
+    './assets/img/report.ico',
+    './assets/img/not-found.svg',
+    './assets/img/reports.png',
+    './assets/js/auth/signin.js',
+    './assets/js/admin/admin.home.controller.js',
+    './assets/js/admin/admin.users.controller.js',
+    './assets/js/axios/axios-instance.js',
+    './assets/js/toast/toasts.js',
+    './assets/js/main.js',
 ];
 
 // Todos aquellos recursos exteriores que nunca cambian
 const APP_SHELL_INMUTABLE = [
-    '/assets/js/jquery-3-7-1.min.js',
-    '/assets/vendor/bootstrap/css/bootstrap.css',
-    '/assets/vendor/bootstrap/js/bootstrap.js',
-    '/assets/vendor/bootstrap-icons/bootstrap-icons.css',
-    '/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff',
-    '/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2',
-    '/assets/vendor/boxicons/css/boxicons.css',
-    '/assets/vendor/boxicons/fonts/boxicons.eot',
-    '/assets/vendor/boxicons/fonts/boxicons.svg',
-    '/assets/vendor/boxicons/fonts/boxicons.woff',
-    '/assets/vendor/boxicons/fonts/boxicons.ttf',
-    '/assets/vendor/boxicons/fonts/boxicons.woff2',
-    '/assets/vendor/simple-datatables/simple-datatables.js',
-    '/assets/vendor/simple-datatables/styles.css',
+    './assets/js/jquery-3-7-1.min.js',
+    './assets/vendor/bootstrap/css/bootstrap.css',
+    './assets/vendor/bootstrap/js/bootstrap.js',
+    './assets/vendor/bootstrap-icons/bootstrap-icons.css',
+    './assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff',
+    './assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2',
+    './assets/vendor/boxicons/css/boxicons.css',
+    './assets/vendor/boxicons/fonts/boxicons.eot',
+    './assets/vendor/boxicons/fonts/boxicons.svg',
+    './assets/vendor/boxicons/fonts/boxicons.woff',
+    './assets/vendor/boxicons/fonts/boxicons.ttf',
+    './assets/vendor/boxicons/fonts/boxicons.woff2',
+    './assets/vendor/simple-datatables/simple-datatables.js',
+    './assets/vendor/simple-datatables/styles.css',
 ];
 
 //cuando la tabla de cacfhes llegue a cierta cantidad, se van a ir borrando los viejos y poniendo los nuevos
